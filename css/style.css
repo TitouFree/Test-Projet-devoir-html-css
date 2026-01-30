@@ -1,0 +1,199 @@
+@import url('color.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 14px;/* 1rem = 14px */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-height: 5rem;
+}
+
+header input{
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    width: 20rem;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    
+}
+
+input::placeholder{
+    color: var(--white-color);
+    padding-left: 2rem;
+    margin-top: 3rem;
+    font-size: x-small;
+}
+
+.search__icon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    left: 1rem;
+    top: 1.8rem;
+    flex:0 0 auto;
+    
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* espace entre l'image et le bouton */
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;/* pour s'assurer que l'image couvre bien le conteneur circulaire */
+}
+
+.profile button{
+    padding: 0.7rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;/* mettre le texte en majuscules */
+    font-size: x-small;
+    
+}
+section{
+    width: 100%; /* pleine largeur */
+    display: grid; /* Utilisation de la grille CSS */
+    grid-template-columns: repeat(3, 1fr); /* trois colonnes de largeur égale */
+    grid-template-rows: repeat(3, 1fr);/* six lignes de hauteur égale */
+    gap: 1rem; /* espace entre les éléments de la grille */
+    margin:  1rem 0;
+}
+
+main{
+    padding: 2rem;
+}
+
+main h2{
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    margin-left: 0.1rem;
+}
+
+main article{
+   background-color:  var(--primary-color);
+   width: 23rem;
+   height: 12rem;
+   border-radius: 7px;
+   border-top:  1px solid var(--white-color);
+}
+
+main article:hover{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+article .card{
+    display: flex;
+   justify-content: space-between;
+}
+
+main p{
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: x-small;
+    border-top: 1px solid var(--white-color);
+    margin-left: -2.8rem;
+    margin-right: -1.5rem;
+    margin-top: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    border-color: var(--white-color) size 10px;
+    padding: 0.5rem;
+    color: var(--white-color);
+    font-size:xx-small;
+    gap: 0.5rem;
+}
+
+button{
+    padding: 0.2rem 0.1rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 5px
+}
+
+.btn-box{
+    padding-right: 1rem;
+    padding-top: 0.9rem;
+    flex:0 0 auto;
+}
+
+.btn-box img{
+    width: 15px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div h3{
+    margin-top: 0.3rem;
+}
+.logos{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    background-color: var(--white-color);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:0 0 auto;
+}
+
+.logos img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 460px) {
+    header {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        max-height: none;
+    }
+
+    header input{
+        width: 18rem;
+    }
+
+}
+
