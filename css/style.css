@@ -195,5 +195,19 @@ footer {
         width: 18rem;
     }
 
+    section {
+        grid-template-columns: 1fr; /* une seule colonne */
+        grid-template-rows: auto; /* hauteur automatique */
+    }
+   section article{
+        max-width: 280px;
+        margin: 0 auto 1.5rem;
+   }
+   h2{
+    text-align: center;
+   }
+   footer{
+    font-size: x-small;
+   }
 }
 
